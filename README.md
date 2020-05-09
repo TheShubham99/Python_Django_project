@@ -1,7 +1,7 @@
 # Python Django Data Analysis
 
 ## Setup
-1. Install and setup Django
+1. Install and setup Django & create a project.
 2. clone this repo.
 3. Set up a localhost server(xampp/wamp,etc.)
 4. Move `1000SalesRecords.csv` into root directory of localhost i.e. in xampp/wamp files.
