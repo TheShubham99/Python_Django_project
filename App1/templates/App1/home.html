@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<head>
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+* {
+  box-sizing:border-box;
+}
+
+.button {
+  background-color: #000000;
+  border: none;
+  align:center;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+</style>
+<title>{{ Title }}</title>
+<body>
+<div class="container">
+<table border="1" class="table">
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header"><h1 class="navbar-brand" href="#">Shopping Cart Analyzer</h1></div>
+<ul class="nav navbar-nav">
+<li class="active"><a href="http://127.0.0.1:8000/Pratham/">Home</a></li>
+<li><a href="http://127.0.0.1:8000/Plot/">Plot</a>
+<li><a href="http://127.0.0.1:8000/Analysis/">Analyze Report</a>
+<li><a href="file:///C:/Users/Shubham/PycharmProjects/Test/Test/App1/templates/App1/Statistics.html">Analyzed Charts</a>
+</li></li></li></ul>
+</div>
+</nav>
+<center> <button class="button" onclick="myFunction()">Show Data</button></center></table></div></body></head></html>
+<script>
+function myFunction() {
+  var x = document.getElementById("tt");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script><table border="1" class="table" id="tt" style="">
+<thead class="thead-dark">
+<tr style="text-align: right;">
+<th></th>
+<th>Region</th>
+<th>Country</th>
+<th>Item Type</th>
+<th>Sales Channel</th>
+<th>Order Priority</th>
+<th>Order Date</th>
+<th>Order ID</th>
+<th>Ship Date</th>
+<th>Units Sold</th>
+<th>Unit Price</th>
+<th>Unit Cost</th>
+<th>Total Revenue</th>
+<th>Total Cost</th>
+<th>Total Profit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Middle East and North Africa</td>
+<td>Libya</td>
+<td>Cosmetics</td>
+<td>Offline</td>
+<td>M</td>
+<td>10/18/2014</td>
+<td>686800706</td>
+<td>10/31/2014</td>
+<td>8446</td>
+<td>437.20</td>
+<td>263.33</td>
+<td>3692591.20</td>
+<td>2224085.18</td>
+<td>1468506.02</td>
+</tr>
+<tr>
+<th>1</th>
+<td>North America</td>
+<td>Canada</td>
+<td>Vegetables</td>
+<td>Online</td>
+<td>M</td>
+<td>11-07-2011</td>
+<td>185941302</td>
+<td>12-08-2011</td>
+<td>3018</td>
+<td>154.06</td>
+<td>90.93</td>
+<td>464953.08</td>
+<td>274426.74</td>
+<td>190526.34</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Middle East and North Africa</td>
+<td>Libya</td>
+<td>Baby Food</td>
+<td>Offline</td>
+<td>C</td>
+<td>10/31/2016</td>
+<td>246222341</td>
+<td>12-09-2016</td>
+<td>1517</td>
+<td>255.28</td>
+<td>159.42</td>
+<td>387259.76</td>
+<td>241840.14</td>
+<td>145419.62</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Asia</td>
+<td>Japan</td>
+<td>Cereal</td>
+<td>Offline</td>
+<td>C</td>
+<td>04-10-2010</td>
+<td>161442649</td>
+<td>05-12-2010</td>
+<td>3322</td>
+<td>205.70</td>
+<td>117.11</td>
+<td>683335.40</td>
+<td>389039.42</td>
+<td>294295.98</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Sub-Saharan Africa</td>
+<td>Chad</td>
+<td>Fruits</td>
+<td>Offline</td>
+<td>H</td>
+<td>8/16/2011</td>
+<td>645713555</td>
+<td>8/31/2011</td>
+<td>9845</td>
+<td>9.33</td>
+<td>6.92</td>
+<td>91853.85</td>
+<td>68127.40</td>
+<td>23726.45</td>
+</tr>
+<tr>
+<th>5</th>
+<td>Europe</td>
+<td>Armenia</td>
+<td>Cereal</td>
+<td>Online</td>
+<td>H</td>
+<td>11/24/2014</td>
+<td>683458888</td>
+<td>12/28/2014</td>
+<td>9528</td>
+<td>205.70</td>
+<td>117.11</td>
+<td>1959909.60</td>
+<td>1115824.08</td>
+<td>844085.52</td>
+</tr>
+<tr>
+<th>6</th>
+<td>Sub-Saharan Africa</td>
+<td>Eritrea</td>
+<td>Cereal</td>
+<td>Online</td>
+<td>H</td>
+<td>03-04-2015</td>
+<td>679414975</td>
+<td>4/17/2015</td>
+<td>2844</td>
+<td>205.70</td>
+<td>117.11</td>
+<td>585010.80</td>
+<td>333060.84</td>
+<td>251949.96</td>
+</tr>
+<tr>
+<th>7</th>
+<td>Europe</td>
+<td>Montenegro</td>
+<td>Clothes</td>
+<td>Offline</td>
+<td>M</td>
+<td>5/17/2012</td>
+<td>208630645</td>
+<td>6/28/2012</td>
+<td>7299</td>
+<td>109.28</td>
+<td>35.84</td>
+<td>797634.72</td>
+<td>261596.16</td>
+<td>536038.56</td>
+</tr>
+<tr>
+<th>8</th>
+<td>Central America and the Caribbean</td>
+<td>Jamaica</td>
+<td>Vegetables</td>
+<td>Online</td>
+<td>H</td>
+<td>1/29/2015</td>
+<td>266467225</td>
+<td>03-07-2015</td>
+<td>2428</td>
+<td>154.06</td>
+<td>90.93</td>
+<td>374057.68</td>
+<td>220778.04</td>
+<td>153279.64</td>
+</tr>
+<tr>
+<th>9</th>
+<td>Australia and Oceania</td>
+<td>Fiji</td>
+<td>Vegetables</td>
+<td>Offline</td>
+<td>H</td>
+<td>12/24/2013</td>
+<td>118598544</td>
+<td>1/19/2014</td>
+<td>4800</td>
+<td>154.06</td>
+<td>90.93</td>
+<td>739488.00</td>
+<td>436464.00</td>
+<td>303024.00</td>
+</tr>
+<tr>
+<th>10</th>
+<td>Sub-Saharan Africa</td>
+<td>Togo</td>
+<td>Clothes</td>
+<td>Online</td>
+<td>M</td>
+<td>12/29/2015</td>
+<td>451010930</td>
+<td>1/19/2016</td>
+<td>3012</td>
+<td>109.28</td>
+<td>35.84</td>
+<td>329151.36</td>
+<td>107950.08</td>
+<td>221201.28</td>
+</tr>
+<tr>
+<th>11</th>
+<td>Europe</td>
+<td>Montenegro</td>
+<td>Snacks</td>
+<td>Offline</td>
+<td>M</td>
+<td>2/27/2010</td>
+<td>220003211</td>
+<td>3/18/2010</td>
+<td>2694</td>
+<td>152.58</td>
+<td>97.44</td>
+<td>411050.52</td>
+<td>262503.36</td>
+<td>148547.16</td>
+</tr>
+<tr>
+<th>12</th>
+<td>Europe</td>
+<td>Greece</td>
+<td>Household</td>
+<td>Online</td>
+<td>C</td>
+<td>11/17/2016</td>
+<td>702186715</td>
+<td>12/22/2016</td>
+<td>1508</td>
+<td>668.27</td>
+<td>502.54</td>
+<td>1007751.16</td>
+<td>757830.32</td>
+<td>249920.84</td>
+</tr>
+<tr>
+<th>13</th>
+<td>Sub-Saharan Africa</td>
+<td>Sudan</td>
+<td>Cosmetics</td>
+<td>Online</td>
+<td>C</td>
+<td>12/20/2015</td>
+<td>544485270</td>
+<td>01-05-2016</td>
+<td>4146</td>
+<td>437.20</td>
+<td>263.33</td>
+<td>1812631.20</td>
+<td>1091766.18</td>
+<td>720865.02</td>
+</tr>
+<tr>
+<th>14</th>
+<td>Asia</td>
+<td>Maldives</td>
+<td>Fruits</td>
+<td>Offline</td>
+<td>L</td>
+<td>01-08-2011</td>
+<td>714135205</td>
+<td>02-06-2011</td>
+<td>7332</td>
+<td>9.33</td>
+<td>6.92</td>
+<td>68407.56</td>
+<td>50737.44</td>
+<td>17670.12</td>
+</tr>
+<tr>
+<th>15</th>
+<td>Europe</td>
+<td>Montenegro</td>
+<td>Clothes</td>
+<td>Offline</td>
+<td>H</td>
+<td>6/28/2010</td>
+<td>448685348</td>
+<td>7/22/2010</td>
+<td>4820</td>
+<td>109.28</td>
+<td>35.84</td>
+<td>526729.60</td>
+<td>172748.80</td>
+<td>353980.80</td>
+</tr>
+<tr>
+<th>16</th>
+<td>Europe</td>
+<td>Estonia</td>
+<td>Office Supplies</td>
+<td>Online</td>
+<td>H</td>
+<td>4/25/2016</td>
+<td>405997025</td>
+<td>05-12-2016</td>
+<td>2397</td>
+<td>651.21</td>
+<td>524.96</td>
+<td>1560950.37</td>
+<td>1258329.12</td>
+<td>302621.25</td>
+</tr>
+<tr>
+<th>17</th>
+<td>North America</td>
+<td>Greenland</td>
+<td>Beverages</td>
+<td>Online</td>
+<td>M</td>
+<td>7/27/2012</td>
+<td>414244067</td>
+<td>08-07-2012</td>
+<td>2880</td>
+<td>47.45</td>
+<td>31.79</td>
+<td>136656.00</td>
+<td>91555.20</td>
+<td>45100.80</td>
+</tr>
+<tr>
+<th>18</th>
+<td>Sub-Saharan Africa</td>
+<td>Cape Verde</td>
+<td>Clothes</td>
+<td>Online</td>
+<td>C</td>
+<td>09-08-2014</td>
+<td>821912801</td>
+<td>10-03-2014</td>
+<td>1117</td>
+<td>109.28</td>
+<td>35.84</td>
+<td>122065.76</td>
+<td>40033.28</td>
+<td>82032.48</td>
+</tr>
+<tr>
+<th>19</th>
+<td>Sub-Saharan Africa</td>
+<td>Senegal</td>
+<td>Household</td>
+<td>Offline</td>
+<td>L</td>
+<td>8/27/2012</td>
+<td>247802054</td>
+<td>09-08-2012</td>
+<td>8989</td>
+<td>668.27</td>
+<td>502.54</td>
+<td>6007079.03</td>
+<td>4517332.06</td>
+<td>1489746.97</td>
+</tr>
+<tr>
+<th>20</th>
+<td>Australia and Oceania</td>
+<td>Federated States of Micronesia</td>
+<td>Snacks</td>
+<td>Online</td>
+<td>C</td>
+<td>09-03-2012</td>
+<td>531023156</td>
+<td>10/15/2012</td>
+<td>407</td>
+<td>152.58</td>
+<td>97.44</td>
+<td>62100.06</td>
+<td>39658.08</td>
+<td>22441.98</td>
+</tr>
+<tr>
+<th>21</th>
+<td>Europe</td>
+<td>Bulgaria</td>
+<td>Clothes</td>
+<td>Online</td>
+<td>L</td>
+<td>8/27/2010</td>
+<td>880999934</td>
+<td>9/16/2010</td>
+<td>6313</td>
+<td>109.28</td>
+<td>35.84</td>
+<td>689884.64</td>
+<td>226257.92</td>
+<td>463626.72</td>
+</tr>
+<tr>
+<th>22</th>
+<td>Middle East and North Africa</td>
+<td>Algeria</td>
+<td>Personal Care</td>
+<td>Online</td>
+<td>H</td>
+<td>2/20/2011</td>
+<td>127468717</td>
+<td>03-09-2011</td>
+<td>9681</td>
+<td>81.73</td>
+<td>56.67</td>
+<td>791228.13</td>
+<td>548622.27</td>
+<td>242605.86</td>
+</tr>
+<tr>
+<th>23</th>
+<td>Asia</td>
+<td>Mongolia</td>
+<td>Clothes</td>
+<td>Online</td>
+<td>L</td>
+<td>12-12-2015</td>
+<td>770478332</td>
+<td>1/24/2016</td>
+<td>515</td>
+<td>109.28</td>
+<td>35.84</td>
+<td>56279.20</td>
+<td>18457.60</td>
+<td>37821.60</td>
+</tr>
+<tr>
+<th>24</th>
+<td>Central America and the Caribbean</td>
+<td>Grenada</td>
+<td>Cereal</td>
+<td>Online</td>
+<td>H</td>
+<td>10/28/2012</td>
+<td>430390107</td>
+<td>11/13/2012</td>
+<td>852</td>
+<td>205.70</td>
+<td>117.11</td>
+<td>175256.40</td>
+<td>99777.72</td>
+<td>75478.68</td>
+</tr>
+<tr>
+<th>25</th>
+<td>Central America and the Caribbean</td>
+<td>Grenada</td>
+<td>Beverages</td>
+<td>Online</td>
+<td>M</td>
+<td>1/30/2017</td>
+<td>397877871</td>
+<td>3/20/2017</td>
+<td>9759</td>
+<td>47.45</td>
+<td>31.79</td>
+<td>463064.55</td>
+<td>310238.61</td>
+<td>152825.94</td>
+</tr>
+<tr>
+<th>26</th>
+<td>Sub-Saharan Africa</td>
+<td>Senegal</td>
+<td>Beverages</td>
+<td>Offline</td>
+<td>M</td>
+<td>10/22/2014</td>
+<td>683927953</td>
+<td>11-04-2014</td>
+<td>8334</td>
+<td>47.45</td>
+<td>31.79</td>
+<td>395448.30</td>
+<td>264937.86</td>
+<td>130510.44</td>
+</tr>
+<tr>
+<th>27</th>
+<td>North America</td>
+<td>Greenland</td>
+<td>Fruits</td>
+<td>Offline</td>
+<td>M</td>
+<td>1/31/2012</td>
+<td>469839179</td>
+<td>2/22/2012</td>
+<td>4709</td>
+<td>9.33</td>
+<td>6.92</td>
+<td>43934.97</td>
+<td>32586.28</td>
+<td>11348.69</td>
+</tr>
+<tr>
+<th>28</th>
+<td>Sub-Saharan Africa</td>
+<td>Chad</td>
+<td>Meat</td>
+<td>Offline</td>
+<td>H</td>
+<td>1/20/2016</td>
+<td>357222878</td>
+<td>03-09-2016</td>
+<td>9043</td>
+<td>421.89</td>
+<td>364.69</td>
+<td>3815151.27</td>
+<td>3297891.67</td>
+<td>517259.60</td>
+</tr>
+<tr>
+<th>29</th>
+<td>Sub-Saharan Africa</td>
+<td>Mauritius</td>
+<td>Personal Care</td>
+<td>Online</td>
+<td>C</td>
+<td>01-01-2016</td>
+<td>118002879</td>
+<td>01-07-2016</td>
+<td>8529</td>
+<td>81.73</td>
+<td>56.67</td>
+<td>697075.17</td>
+<td>483338.43</td>
+<td>213736.74</td>
+</tr>
+<tr>
+<th>30</th>
+<td>Middle East and North Africa</td>
+<td>Morocco</td>
+<td>Beverages</td>
+<td>Offline</td>
+<td>C</td>
+<td>06-01-2017</td>
+<td>944415509</td>
+<td>6/23/2017</td>
+<td>2391</td>
+<td>47.45</td>
+<td>31.79</td>
+<td>113452.95</td>
+<td>76009.89</td>
+<td>37443.06</td>
+</tr>
+<tr>
+<th>31</th>
+<td>Central America and the Caribbean</td>
+<td>Honduras</td>
+<td>Office Supplies</td>
+<td>Online</td>
+<td>H</td>
+<td>6/30/2015</td>
+<td>499009597</td>
+<td>07-09-2015</td>
+<td>6884</td>
+<td>651.21</td>
+<td>524.96</td>
+<td>4482929.64</td>
+<td>3613824.64</td>
+<td>869105.00</td>
+</tr>
+<tr>
+<th>32</th>
+<td>Sub-Saharan Africa</td>
+<td>Benin</td>
+<td>Fruits</td>
+<td>Online</td>
+<td>L</td>
+<td>1/28/2014</td>
+<td>564646470</td>
+<td>3/16/2014</td>
+<td>293</td>
+<td>9.33</td>
+<td>6.92</td>
+<td>2733.69</td>
+<td>2027.56</td>
+<td>706.13</td>
+</tr>
+<tr>
+<th>33</th>
+<td>Europe</td>
+<td>Greece</td>
+<td>Baby Food</td>
+<td>Offline</td>
+<td>M</td>
+<td>04-08-2014</td>
+<td>294499957</td>
+<td>04-08-2014</td>
+<td>7937</td>
+<td>255.28</td>
+<td>159.42</td>
+<td>2026157.36</td>
+<td>1265316.54</td>
+<td>760840.82</td>
+</tr>
+<tr>
+<th>34</th>
+<td>Central America and the Caribbean</td>
+<td>Jamaica</td>
+<td>Beverages</td>
+<td>Offline</td>
+<td>L</td>
+<td>09-04-2010</td>
+<td>262056386</td>
+<td>10/24/2010</td>
+<td>7163</td>
+<td>47.45</td>
+<td>31.79</td>
+<td>339884.35</td>
+<td>227711.77</td>
+<td>112172.58</td>
+</tr>
+<tr>
+<th>35</th>
+<td>Sub-Saharan Africa</td>
+<td>Equatorial Guinea</td>
+<td>Office Supplies</td>
+<td>Online</td>
+<td>M</td>
+<td>05-02-2010</td>
+<td>211114585</td>
+<td>5/14/2010</td>
+<td>2352</td>
+<td>651.21</td>
+<td>524.96</td>
+<td>1531645.92</td>
+<td>1234705.92</td>
+<td>296940.00</td>
+</tr>
+<tr>
+<th>36</th>
+<td>Sub-Saharan Africa</td>
+<td>Swaziland</td>
+<td>Office Supplies</td>
+<td>Offline</td>
+<td>H</td>
+<td>10-03-2013</td>
+<td>405785882</td>
+<td>10/22/2013</td>
+<td>9915</td>
+<td>651.21</td>
+<td>524.96</td>
+<td>6456747.15</td>
+<td>5204978.40</td>
+<td>1251768.75</td>
+</tr>
+<tr>
+<th>37</th>
+<td>Central America and the Caribbean</td>
+<td>Trinidad and Tobago</td>
+<td>Vegetables</td>
+<td>Offline</td>
+<td>M</td>
+<td>03-06-2011</td>
+<td>280494105</td>
+<td>4/14/2011</td>
+<td>3294</td>
+<td>154.06</td>
+<td>90.93</td>
+<td>507473.64</td>
+<td>299523.42</td>
+<td>207950.22</td>
+</tr>
+<tr>
+<th>38</th>
+<td>Europe</td>
+<td>Sweden</td>
+<td>Baby Food</td>
+<td>Online</td>
+<td>L</td>
+<td>08-07-2016</td>
+<td>689975583</td>
+<td>08-12-2016</td>
+<td>7963</td>
+<td>255.28</td>
+<td>159.42</td>
+<td>2032794.64</td>
+<td>1269461.46</td>
+<td>763333.18</td>
+</tr>
+<tr>
+<th>39</th>
+<td>Europe</td>
+<td>Belarus</td>
+<td>Office Supplies</td>
+<td>Online</td>
+<td>L</td>
+<td>01-11-2011</td>
+<td>759279143</td>
+<td>2/18/2011</td>
+<td>6426</td>
+<td>651.21</td>
+<td>524.96</td>
+<td>4184675.46</td>
+<td>3373392.96</td>
+<td>811282.50</td>
+</tr>
+<tr>
+<th>40</th>
+<td>Sub-Saharan Africa</td>
+<td>Guinea-Bissau</td>
+<td>Office Supplies</td>
+<td>Offline</td>
+<td>C</td>
+<td>5/21/2014</td>
+<td>133766114</td>
+<td>06-12-2014</td>
+<td>3221</td>
+<td>651.21</td>
+<td>524.96</td>
+<td>2097547.41</td>
+<td>1690896.16</td>
+<td>406651.25</td>
+</tr>
+<tr>
+<th>41</th>
+<td>Asia</td>
+<td>Mongolia</td>
+<td>Beverages</td>
+<td>Online</td>
+<td>M</td>
+<td>08-03-2013</td>
+<td>329110324</td>
+<td>09-02-2013</td>
+<td>9913</td>
+<td>47.45</td>
+<td>31.79</td>
+<td>470371.85</td>
+<td>315134.27</td>
+<td>155237.58</td>
+</tr>
+<tr>
+<th>42</th>
+<td>Middle East and North Africa</td>
+<td>Turkey</td>
+<td>Meat</td>
+<td>Online</td>
+<td>L</td>
+<td>10-05-2011</td>
+<td>681298100</td>
+<td>11/20/2011</td>
+<td>103</td>
+<td>421.89</td>
+<td>364.69</td>
+<td>43454.67</td>
+<td>37563.07</td>
+<td>5891.60</td>
+</tr>
+<tr>
+<th>43</th>
+<td>Sub-Saharan Africa</td>
+<td>Central African Republic</td>
+<td>Snacks</td>
+<td>Offline</td>
+<td>L</td>
+<td>11/15/2016</td>
+<td>596628272</td>
+<td>12/30/2016</td>
+<td>4419</td>
+<td>152.58</td>
+<td>97.44</td>
+<td>674251.02</td>
+<td>430587.36</td>
+<td>243663.66</td>
+</tr>
+<tr>
+<th>44</th>
+<td>Sub-Saharan Africa</td>
+<td>Equatorial Guinea</td>
+<td>Office Supplies</td>
+<td>Offline</td>
+<td>L</td>
+<td>04-03-2015</td>
+<td>901712167</td>
+<td>4/17/2015</td>
+<td>5523</td>
+<td>651.21</td>
+<td>524.96</td>
+<td>3596632.83</td>
+<td>2899354.08</td>
+<td>697278.75</td>
+</tr>
+<tr>
+<th>45</th>
+<td>Asia</td>
+<td>Laos</td>
+<td>Beverages</td>
+<td>Online</td>
+<td>M</td>
+<td>3/22/2013</td>
+<td>693473613</td>
+<td>4/21/2013</td>
+<td>3107</td>
+<td>47.45</td>
+<td>31.79</td>
+<td>147427.15</td>
+<td>98771.53</td>
+<td>48655.62</td>
+</tr>
+<tr>
+<th>46</th>
+<td>Europe</td>
+<td>Armenia</td>
+<td>Meat</td>
+<td>Online</td>
+<td>C</td>
+<td>08-02-2010</td>
+<td>489148938</td>
+<td>09-01-2010</td>
+<td>8896</td>
+<td>421.89</td>
+<td>364.69</td>
+<td>3753133.44</td>
+<td>3244282.24</td>
+<td>508851.20</td>
+</tr>
+<tr>
+<th>47</th>
+<td>Europe</td>
+<td>Greece</td>
+<td>Household</td>
+<td>Online</td>
+<td>L</td>
+<td>01-05-2012</td>
+<td>876286971</td>
+<td>2/15/2012</td>
+<td>1643</td>
+<td>668.27</td>
+<td>502.54</td>
+<td>1097967.61</td>
+<td>825673.22</td>
+<td>272294.39</td>
+</tr>
+<tr>
+<th>48</th>
+<td>Middle East and North Africa</td>
+<td>Israel</td>
+<td>Personal Care</td>
+<td>Offline</td>
+<td>H</td>
+<td>8/26/2015</td>
+<td>262749040</td>
+<td>8/30/2015</td>
+<td>2135</td>
+<td>81.73</td>
+<td>56.67</td>
+<td>174493.55</td>
+<td>120990.45</td>
+<td>53503.10</td>
+</tr>
+<tr>
+<th>49</th>
+<td>Asia</td>
+<td>Bhutan</td>
+<td>Meat</td>
+<td>Online</td>
+<td>H</td>
+<td>12-09-2016</td>
+<td>726708972</td>
+<td>1/26/2017</td>
+<td>8189</td>
+<td>421.89</td>
+<td>364.69</td>
+<td>3454857.21</td>
+<td>2986446.41</td>
+<td>468410.80</td>
+</tr>
+</tbody>
+</table>

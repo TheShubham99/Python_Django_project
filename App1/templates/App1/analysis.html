@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <head>
+        <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <style>
+* {
+  box-sizing:border-box;
+}
+
+.button {
+  background-color: #000000;
+  border: none;
+  align:center;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+</style>
+
+    <title>{{ Title }}</title>
+<body>
+<div class="container">
+    <table border="1">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header"><a class="navbar-brand" href="#">Shoping Cart Analyzer</a></div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="http://127.0.0.1:8000/Pratham/">Home</a></li>
+                    <li><a href="http://127.0.0.1:8000/Plot/">Plot</a>
+                    <li><a href="http://127.0.0.1:8000/Analysis/">Analyze Report</a>
+                    <li><a href="file:///C:/Users/Shubham/PycharmProjects/Test/Test/App1/templates/App1/Statistics.html">Analyzed Charts</a>
+                </ul>
+            </div>
+        </nav>
+
+
+        <script>
+function myFunction() {
+  var x = document.getElementById("tt");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+<style>
+* {
+  box-sizing:border-box;
+}
+.button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  align="center"
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:20px;
+}
+
+.container {
+  padding: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 10000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+
+    </style>
+</head>
+
+<center>
+<button class="button" onclick="myFunction()">Print this page</button>
+
+<script>
+function myFunction() {
+
+  window.print();
+}
+</script>
+
+<center></center><div align="center" class="row">
+    <div align="center" class="column-66">
+        <h1 align="center">Analysis Report</h1><br><br>
+        <p><span style="font-size:36px">{{ Name }} </span>is made to analyze the overall data of goods that customers shop over the period.
+        According to the Report the Maximum Price Among all the products is <span style="font-size:36px">Rs. {{ maxunitprice }}. </span>
+            Most products were ordered from the region <span style="font-size:36px">{{mostregion}}.<br></span> The maximum profit for any product is
+            <span style="font-size:36px">Rs. {{ maxprofit }}. </span> <br><span style="font-size:36px"><br>{{ mostcountry }}</span> has maximum number of customers.
+
+            The Total profit earned by the company from all regions and all products is <span style="font-size:36px">Rs. {{ totalprofit }}. </span>
+            <br><span style="font-size:36px"> {{ olpercent }}% </span> off the transactions were online.
+
+            <br><br>
+            <span style="font-size:36px; color:red">The following table shows the type of Products and the count.</span>
+
+        </p>
+    </div>
+</div>
+</center>
+<table border="1" class="table">
+<thead class="thead-dark">
+<tr style="text-align: right;">
+<th></th>
+<th>Number of Products</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Office Supplies</th>
+<td>7</td>
+</tr>
+<tr>
+<th>Beverages</th>
+<td>7</td>
+</tr>
+<tr>
+<th>Clothes</th>
+<td>6</td>
+</tr>
+<tr>
+<th>Meat</th>
+<td>4</td>
+</tr>
+<tr>
+<th>Cereal</th>
+<td>4</td>
+</tr>
+<tr>
+<th>Fruits</th>
+<td>4</td>
+</tr>
+<tr>
+<th>Vegetables</th>
+<td>4</td>
+</tr>
+<tr>
+<th>Snacks</th>
+<td>3</td>
+</tr>
+<tr>
+<th>Personal Care</th>
+<td>3</td>
+</tr>
+<tr>
+<th>Baby Food</th>
+<td>3</td>
+</tr>
+<tr>
+<th>Household</th>
+<td>3</td>
+</tr>
+<tr>
+<th>Cosmetics</th>
+<td>2</td>
+</tr>
+</tbody>
+</table></html>
