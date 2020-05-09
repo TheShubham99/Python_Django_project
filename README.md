@@ -3,8 +3,8 @@
 ## Setup
 1. Install and setup Django
 2. clone this repo.
-3. Set up a localhost server(xampp/wampp)
-4. Download `https://github.com/TheShubham99/Python_Django_project/__` and put the .csv file into root directory of localhost
+3. Set up a localhost server(xampp/wamp,etc.)
+4. Move `1000SalesRecords.csv` into root directory of localhost i.e. in xampp/wamp files.
 i.e. It should be accessible at `localhost/___` 
 
 ## Run the program
